@@ -17,7 +17,7 @@ Vuelos Globales opera vuelos a nivel internacional y cuenta con una flota de avi
 ### Requisitos Previos
 - Java JDK 17.0+
 - MySQL 8.0+
-- Maven 3.6+
+- Maven 4.0.0
 
 ### Pasos para la Instalación
 1. Clona el repositorio:
