@@ -48,7 +48,34 @@ Para más detalles, visita la [documentación](/docs/).
 
 ## Estructura del Proyecto 
 ```css
-
+agencia-vuelos-globales/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── application/        
+│   │   │   │   ├── service/       
+│   │   │   │   └── dto/          
+│   │   │   ├── domain/           
+│   │   │   │   ├── model/         
+│   │   │   │   ├── repository/    
+│   │   │   │   └── service/      
+│   │   │   └── infrastructure/    
+│   │   │       ├── adapter/      
+│   │   │       │   ├── web/       
+│   │   │       │   └── persistence/ 
+│   │   │       └── config/        
+│   │   │   
+│   │   └── resources/          
+│   └── test/                    
+│       └── java/
+│           └── application/
+│               └── service/
+├── scripts/
+│   └── sql/
+│       ├── create_tables.sql      
+│       └── insert_data.sql        
+├── pom.xml                        
+└── README.md    
 ```
 
 ## Contribución
