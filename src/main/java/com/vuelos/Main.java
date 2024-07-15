@@ -2,14 +2,14 @@ package com.vuelos;
 
 import java.util.Scanner;
 
-import application.CreatePlaneUseCase;
-import application.CreateUserUseCase;
-import domain.service.UserService;
-import domain.service.PlaneService;
-import infrastructure.in.PlaneController;
-import infrastructure.in.UserController;
-import infrastructure.out.PlaneRepository;
-import infrastructure.out.UserRepository;
+import Plane.application.CreatePlaneUseCase;
+import Plane.domain.services.PlaneService;
+import Plane.infrastructure.in.PlaneController;
+import Plane.infrastructure.out.PlaneRepository;
+import User.application.CreateUserUseCase;
+import User.domain.service.UserService;
+import User.infrastructure.in.UserController;
+import User.infrastructure.out.UserRepository;
 
 public class Main {
     public static void main(String[] args) {
