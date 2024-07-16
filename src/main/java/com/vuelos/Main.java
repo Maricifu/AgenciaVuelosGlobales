@@ -3,10 +3,10 @@ package com.vuelos;
 import java.util.Scanner;
 
 import com.vuelos.Plane.application.CreatePlaneUseCase;
-import Plane.application.FindPlaneByIdUseCase;
-import Plane.application.UpdatePlaneUseCase;
-import Plane.application.DeletePlaneUseCase;
-import Plane.application.FindAllPlanesUseCase;
+import com.vuelos.Plane.application.FindPlaneByIdUseCase;
+import com.vuelos.Plane.application.UpdatePlaneUseCase;
+import com.vuelos.Plane.application.DeletePlaneUseCase;
+import com.vuelos.Plane.application.FindAllPlanesUseCase;
 import com.vuelos.Plane.domain.services.PlaneService;
 import com.vuelos.Plane.infrastructure.in.PlaneController;
 import com.vuelos.Plane.infrastructure.out.PlaneRepository;
