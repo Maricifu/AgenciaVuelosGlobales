@@ -10,11 +10,12 @@ public class Plane {
     private Integer statusId;
     private Integer modelId;
     private Integer airlineId;
+
     public Plane() {
     }
-    
+
     public Plane(Integer id, String plates, Integer capacity, LocalDate fabricationDate, Integer statusId,
-            Integer modelId, Integer airlineId) {
+                 Integer modelId, Integer airlineId) {
         this.id = id;
         this.plates = plates;
         this.capacity = capacity;
@@ -79,8 +80,17 @@ public class Plane {
     public void setAirlineId(Integer airlineId) {
         this.airlineId = airlineId;
     }
-    
 
-
-
+    @Override
+    public String toString() {
+        return "Plane{" +
+                "id=" + id +
+                ", plates='" + plates + '\'' +
+                ", capacity=" + capacity +
+                ", fabricationDate=" + fabricationDate +
+                ", statusId=" + statusId +
+                ", modelId=" + modelId +
+                ", airlineId=" + airlineId +
+                '}';
+    }
 }
