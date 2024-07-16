@@ -3,6 +3,10 @@ package com.vuelos;
 import java.util.Scanner;
 
 import Plane.application.CreatePlaneUseCase;
+import Plane.application.FindPlaneByIdUseCase;
+import Plane.application.UpdatePlaneUseCase;
+import Plane.application.DeletePlaneUseCase;
+import Plane.application.FindAllPlanesUseCase;
 import Plane.domain.services.PlaneService;
 import Plane.infrastructure.in.PlaneController;
 import Plane.infrastructure.out.PlaneRepository;
@@ -19,15 +23,20 @@ public class Main {
         UserController userController = new UserController(createUserUseCase);
 
         // Servicios y casos de uso para Plane
-        PlaneService planeService = new PlaneRepository();
+        PlaneRepository planeRepository = new PlaneRepository();
+        PlaneService planeService = planeRepository;
         CreatePlaneUseCase createPlaneUseCase = new CreatePlaneUseCase(planeService);
-        PlaneController planeController = new PlaneController(createPlaneUseCase);
+        FindPlaneByIdUseCase findPlaneByIdUseCase = new FindPlaneByIdUseCase(planeService);
+        UpdatePlaneUseCase updatePlaneUseCase = new UpdatePlaneUseCase(planeService);
+        DeletePlaneUseCase deletePlaneUseCase = new DeletePlaneUseCase(planeService);
+        FindAllPlanesUseCase findAllPlanesUseCase = new FindAllPlanesUseCase(planeService);
+        PlaneController planeController = new PlaneController(createPlaneUseCase, findPlaneByIdUseCase, updatePlaneUseCase, deletePlaneUseCase, findAllPlanesUseCase);
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("Seleccione una opción:");
             System.out.println("1. Registrar Usuario");
-            System.out.println("2. Registrar Avión");
+            System.out.println("2. Gestionar Avión");
             System.out.println("3. Salir");
 
             int choice = scanner.nextInt();
