@@ -1,7 +1,6 @@
 package com.vuelos.User.application;
 
 import com.vuelos.User.domain.entity.User;
-import com.vuelos.User.domain.service.UserService;
 
 public class CreateUserUseCase {
     private final UserService userService;
@@ -11,6 +10,7 @@ public class CreateUserUseCase {
     }
 
     public void execute(User user) {
+        // Aquí puedo agregar lógica adicional, como validaciones o asignaciones de roles
         userService.createUser(user);
     }
 }

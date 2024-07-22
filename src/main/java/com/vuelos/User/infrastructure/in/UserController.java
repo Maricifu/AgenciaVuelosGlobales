@@ -17,12 +17,12 @@ public class UserController {
             System.out.println("Enter user name: ");
             String name = scanner.nextLine();
 
-            System.out.println("Enter user email: ");
-            String email = scanner.nextLine();
+            System.out.println("Enter user password: ");
+            String password = scanner.nextLine();
 
             User user = new User();
             user.setName(name);
-            user.setEmail(email);
+            user.setPassword(password);
 
             createUserUseCase.execute(user);
         }

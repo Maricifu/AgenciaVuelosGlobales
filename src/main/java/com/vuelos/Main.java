@@ -11,7 +11,7 @@ import com.vuelos.Plane.domain.services.PlaneService;
 import com.vuelos.Plane.infrastructure.in.PlaneController;
 import com.vuelos.Plane.infrastructure.out.PlaneRepository;
 import com.vuelos.User.application.CreateUserUseCase;
-import com.vuelos.User.domain.service.UserService;
+import com.vuelos.User.application.UserService;
 import com.vuelos.User.infrastructure.in.UserController;
 import com.vuelos.User.infrastructure.out.UserRepository;
 

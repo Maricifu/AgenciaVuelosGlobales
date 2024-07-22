@@ -48,6 +48,63 @@ Para más detalles, visita la [documentación](/docs/).
 
 ## Estructura del Proyecto 
 ```css
+📦src
+ ┗ 📂main
+ ┃ ┗ 📂java
+ ┃ ┃ ┣ 📂com
+ ┃ ┃ ┃ ┗ 📂vuelos
+ ┃ ┃ ┃ ┃ ┣ 📂Airline
+ ┃ ┃ ┃ ┃ ┃ ┗ 📂domain
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂entity
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜Airline.java
+ ┃ ┃ ┃ ┃ ┣ 📂Plane
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂application
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜CreatePlaneUseCase.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜DeletePlaneUseCase.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜FindAllPlanesUseCase.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜FindPlaneByIdUseCase.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜UpdatePlaneUseCase.java
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂domain
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂entity
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜Plane.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂services
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜PlaneService.java
+ ┃ ┃ ┃ ┃ ┃ ┗ 📂infrastructure
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂in
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜PlaneController.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂out
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜PlaneRepository.java
+ ┃ ┃ ┃ ┃ ┣ 📂PlaneModel
+ ┃ ┃ ┃ ┃ ┃ ┗ 📂domain
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂entity
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜Model.java
+ ┃ ┃ ┃ ┃ ┣ 📂Status
+ ┃ ┃ ┃ ┃ ┃ ┗ 📂domain
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂entity
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜Status.java
+ ┃ ┃ ┃ ┃ ┣ 📂User
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂application
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜CreateUserUseCase.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜UserService.java
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂domain
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂entity
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Permission.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜Role.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜User.java
+ ┃ ┃ ┃ ┃ ┃ ┗ 📂infrastructure
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂in
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜UserController.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂out
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜PermissionRepository.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜RoleRepository.java
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜UserRepository.java
+ ┃ ┃ ┃ ┃ ┗ 📜Main.java
+ ┃ ┃ ┗ 📂config
+ ┃ ┃ ┃ ┗ 📜DatabaseConfig.java
+ ┃ ┃ ┃ ┗ 📜SecurityManager.java
+```
+
+```css
 agencia-vuelos-globales/
 ├── src/
 │   ├── main/
